@@ -1,0 +1,6 @@
+@RFQdotnet_HostAddress = http://localhost:5083
+
+GET {{RFQdotnet_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
