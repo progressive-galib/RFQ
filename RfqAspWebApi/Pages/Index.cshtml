@@ -1,0 +1,51 @@
+@page
+@{
+    ViewData["Title"] = "Current Time";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - My Site</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .time {
+            font-size: 2em;
+            color: #007bff; /* Bootstrap primary color */
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .container {
+            margin: auto;
+            width: 80%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Current Server Time</h1>
+
+    <p>The current time on the server is:</p>
+
+    <div class="time">
+        @DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
+    </div>
+
+    <p>
+        (This time is generated on the server when the page is requested.)
+    </p>
+</div>
+
+</body>
+</html>
