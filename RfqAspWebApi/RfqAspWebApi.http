@@ -1,0 +1,6 @@
+@RfqAspWebApi_HostAddress = http://localhost:5282
+
+GET {{RfqAspWebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
